@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="media/pyramid.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Área de cuadrado</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand--container">
+        <img src="media/pyramid.png" alt="logo" />
+        <p class="title--header">Cálculo de Área</p>
+      </div>
+    </header>
+    <div class="comeBack--btn">
+      <span onclick="history.back()"><a href="#"></a></span>
+    </div>
+    <section>
+      <div class="--onView option--container">
+        <article id="areaSquare" class="cardOnView">
+          <div class="img--container">
+            <img src="media/square.png" alt="areaIcon" />
+          </div>
+          <div class="calcType--container">
+            <p class="calcType--title">
+              <span style="font-weight: bold">Cuadrado</span>
+            </p>
+          </div>
+        </article>
+      </div>
+      <article class="inputData--container">
+        <div class="title--container">
+          <p class="title--text">
+            Ingresa las medidas de la figura solicitadas:
+          </p>
+        </div>
+        <form id="areaSquareForm">
+          <div class="form-group dataInput">
+            <input
+              id="areaSquareSide"
+              class="form-field"
+              type="number"
+              placeholder="N° de Unidades"
+            />
+            <span>Longitud de lado</span>
+          </div>
+          <div class="btn--container">
+            <button type="submit" id="calcAreaBtn" class="fill">
+              Calcular Área
+            </button>
+          </div>
+        </form>
+        <div id="squareAreaResultBox" class="showResult--container d-none">
+          <h4>Resultados:</h4>
+          <br />
+          <p id="squareAreaResponseText">
+            El area de la figura es de 34 Unidades cuadradas.
+          </p>
+        </div>
+      </article>
+    </section>
+    <script src="areaCalcsSq.js"></script>
+  </body>
+</html>

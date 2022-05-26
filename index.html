@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="media/pyramid.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MathApp</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand--container">
+        <img src="media/pyramid.png" alt="logo" />
+        <p class="title--header">Cálculo de áreas y perímetros</p>
+      </div>
+    </header>
+    <section>
+      <div class="title--container">
+        <p class="title--text">
+          <span class="welcome">Bienvenid@!</span> <br />
+          ¿Qué deseas calcular?
+        </p>
+      </div>
+      <div class="option--container">
+        <article id="areaOption">
+          <div class="img--container">
+            <img src="media/ellipse.png" alt="areaIcon" />
+          </div>
+          <div class="calcType--container">
+            <p class="calcType--title">
+              <span style="font-weight: bold">Área</span>
+            </p>
+            <i
+              class="fa-solid fa-chevron-right"
+              style="color: #f4f4f2; margin-top: 15px; text-align: center"
+            ></i>
+          </div>
+        </article>
+        <article id="perimeterOption">
+          <div class="img--container">
+            <img src="media/ellipse-outlined.png" alt="areaIcon" />
+          </div>
+          <div class="calcType--container">
+            <p class="calcType--title">
+              <span style="font-weight: bold">Perímetro</span>
+            </p>
+            <i
+              class="fa-solid fa-chevron-right"
+              style="color: #f4f4f2; margin-top: 15px; text-align: center"
+            ></i>
+          </div>
+        </article>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+      if ("service-worker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script>
+  </body>
+</html>
